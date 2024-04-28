@@ -1,5 +1,3 @@
-Pull request --> https://github.com/Kudzuya/messageMe/pull/12
-
 <<<<<<< sprint_1
 
 MessageME
@@ -27,5 +25,6 @@ npm install — установка зависимостей, <br>npm run start �
 Можно посмотреть превью сайта по ссылке:<br>
 [главная страница](https://messageme-pr.netlify.app/)
 =======
+
 Pull request --> https://github.com/Kudzuya/messageMe/pull/12
->>>>>>> main
+
