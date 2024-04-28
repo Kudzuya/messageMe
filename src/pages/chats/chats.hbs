@@ -1,0 +1,18 @@
+{{#> ChatsLayout}}
+  <section class="chats__chats">
+    {{> TopPanel top-panel=topPanel }}
+    <div class="chats__list">
+      {{#each chatPreviews}}
+        {{> ChatPreview chat=chat}}
+      {{/each}}
+      <div class="chats__button">
+        {{> Button button=newChatButton }}
+      </div>
+    </div>
+  </section>
+  <section class="chats__chat">
+    {{#if noChat}}
+      {{> FlashMessage message=noChat }}
+    {{/if}}
+  </section>
+{{/ChatsLayout}}

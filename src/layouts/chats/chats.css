@@ -1,0 +1,6 @@
+.chats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr) minmax(0, 2fr));
+  width: 100dvw;
+  height: 100dvh;
+}

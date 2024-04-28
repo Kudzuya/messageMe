@@ -1,0 +1,14 @@
+<main class="auth">
+  <a class="auth__logo" href="/">
+    <img src="/src/assets/images/messageme.png"></img>
+  </a>
+  <div class="auth__content">
+    <div class="auth__heading">
+      <h2 class="auth__title title">{{ title }}</h2>
+      <p class="auth__description description">{{ description }}</p>
+    </div>
+    {{#> Form}}
+      {{> @partial-block }}
+    {{/Form}}
+  </div>
+</main>
