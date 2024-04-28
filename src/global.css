@@ -1,0 +1,99 @@
+:root {
+  /* Color Tokens */
+  --color-base-background: #121112;
+  --color-text-contrast: #000;
+  --color-text-primary: #fff;
+  --color-text-secondary: rgb(0 0 0 / 50%);
+  --color-text-link: #007275;
+  --color-text-link-hover: rgba(6, 127, 131, 0.658);
+  --color-text-warning: #e9033a;
+  --color-text-warning-hover: #bd0935;
+  --color-warning: #007275;
+  --color-brand-primary: #007275;
+  --color-brand-hover: rgba(6, 127, 131, 0.658);
+  --color-border: rgb(255 255 255 / 10%);
+  --color-dark-hover: rgb(255 255 255 / 70%);
+  --color-simple-hover: rgb(255 255 255 / 5%);
+
+  /* Spacing Tokens */
+  --spacing-static-max: 100px;
+  --spacing-static-3xl: 60px;
+  --spacing-static-2xl: 30px;
+  --spacing-static-xl: 18px;
+  --spacing-static-l: 14px;
+  --spacing-static-m: 10px;
+  --spacing-static-s: 6px;
+  --spacing-static-xs: 3px;
+  --radius-static-l: 6px;
+
+/* Typography Tokens */
+--font-family: 'Roboto', sans-serif;
+--heading-display-1: 600 normal 28px / 32px var(--font-family);
+--subheader-1: 600 normal 14px / 16px var(--font-family);
+--body-text-base: 400 normal 14px / 16px var(--font-family);
+
+
+  font: var(--body-text-base);
+  color: var(--color-text-primary);
+  text-rendering: optimizelegibility;
+
+  color-scheme: light dark;
+  background-color: var(--color-base-background);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  min-width: 320px;
+  min-height: 100dvh;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100dvh;
+  margin: 0;
+
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font: var(--heading-display-1);
+}
+
+.subheader {
+  margin: 0;
+  font: var(--subheader-1);
+}
+
+.description {
+  margin: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-base-background: #fff;
+    --color-text-contrast: #fff;
+    --color-text-primary: #000;
+    --color-border: rgb(0 0 0 / 10%);
+    --color-dark-hover: rgb(0 0 0 / 70%);
+    --color-simple-hover: rgb(0 0 0 / 5%);
+  }
+}
