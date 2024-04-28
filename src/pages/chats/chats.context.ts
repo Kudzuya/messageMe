@@ -1,9 +1,8 @@
 import type { ChatsPageProps } from './chats.types.ts';
 import newChat from '../../assets/icons/new-chat.svg';
 import noChat from '../../assets/images/no-chat.png';
-import userAvatar from '../../assets/images/user-avatar.png';
 import userAvatarOther from '../../assets/images/other-user-avatar.png';
-
+import userAvatar from '../../assets/images/user-avatar.png';
 import { formatDate } from '../../helpers/format-date.ts';
 
 export const ChatsContext: ChatsPageProps = {

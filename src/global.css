@@ -3,14 +3,14 @@
   --color-base-background: #121112;
   --color-text-contrast: #000;
   --color-text-primary: #fff;
-  --color-text-secondary: rgb(0 0 0 / 50%);
+  --color-text-secondary: rgba(0 0 0 / 50%);
   --color-text-link: #007275;
-  --color-text-link-hover: rgba(6, 127, 131, 0.658);
+  --color-text-link-hover: rgba(6 127 131 / 65.8%);
   --color-text-warning: #e9033a;
   --color-text-warning-hover: #bd0935;
   --color-warning: #007275;
   --color-brand-primary: #007275;
-  --color-brand-hover: rgba(6, 127, 131, 0.658);
+  --color-brand-hover: rgba(6 127 131 / 65.8%);
   --color-border: rgb(255 255 255 / 10%);
   --color-dark-hover: rgb(255 255 255 / 70%);
   --color-simple-hover: rgb(255 255 255 / 5%);
@@ -38,10 +38,11 @@
   text-rendering: optimizelegibility;
 
   color-scheme: light dark;
-  background-color: var(--color-base-background);
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-base-background);
+
+
 
   font-synthesis: none;
 }
