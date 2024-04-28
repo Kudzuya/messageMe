@@ -4,11 +4,6 @@ MessageME
 [![Netlify Status](https://api.netlify.com/api/v1/badges/22b584f6-d494-4537-aff4-d01a2cd393a7/deploy-status)](https://app.netlify.com/sites/messageme-pr/deploys)
 
 
-Описание 
-=================
-Проект мессенджера, созданный с использованием Handlebars для верстки основных экранов и компонентного подхода. <br>
-Для клиентского рендеринга применен Event Bus паттерн с базовым классом Component.
-
 Запуск проекта
 =================
 
