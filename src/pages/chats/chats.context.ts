@@ -1,8 +1,8 @@
 import type { ChatsPageProps } from './chats.types.ts';
-import userAvatarOther from '../../assets/images/other-user-avatar.png'; // Adjusted import order
-import userAvatar from '../../assets/images/user-avatar.png';
 import newChat from '../../assets/icons/new-chat.svg';
 import noChat from '../../assets/images/no-chat.png';
+import userAvatar from '../../assets/images/user-avatar.png';
+import userAvatarOther from '../../assets/images/other-user-avatar.png';
 
 import { formatDate } from '../../helpers/format-date.ts';
 
