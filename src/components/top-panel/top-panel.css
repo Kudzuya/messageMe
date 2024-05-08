@@ -1,0 +1,18 @@
+.top-panel {
+  display: flex;
+  gap: var(--spacing-static-l);
+  align-items: center;
+
+  width: 100%;
+  height: 66px;
+  padding: var(--spacing-static-m) var(--spacing-static-l);
+
+  border-bottom: 2px solid var(--color-border);
+}
+
+@media (hover: hover) {
+  .top-panel__user-account:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 4px var(--color-brand-hover);
+  }
+}
