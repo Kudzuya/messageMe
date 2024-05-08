@@ -1,0 +1,12 @@
+{{#> MainLayout}}
+  {{{FlashMessageComponent message=content}}}
+  <nav class="links">
+    <ul class="links__list">
+      {{#each links as |link|}}
+        <li class="links__item">
+          {{{LinkComponent link=link}}}
+        </li>
+      {{/each}}
+    </ul>
+  </nav>
+{{/MainLayout}}

@@ -1,0 +1,23 @@
+<button class="button"
+        data-size="{{#if size}}{{ size }}{{else}}l{{/if}}"
+        data-style="{{#if style}}{{ style }}{{else}}flat{{/if}}"
+        data-width="{{ width }}"
+        type="{{ type }}"
+        {{#if disabled }}disabled{{/if}}>
+  {{#if isIconOnly}}
+    {{#if icon}}
+      <img class="button__icon"
+           src="{{ icon }}"
+           alt="{{ label }}" />
+    {{/if}}
+  {{else}}
+    {{#if icon}}
+      <img class="button__icon"
+           src="{{ icon }}"
+           alt="button__icon" />
+    {{/if}}
+    {{#if label}}
+      <span class="button__label">{{ label }}</span>
+    {{/if}}
+  {{/if}}
+</button>
