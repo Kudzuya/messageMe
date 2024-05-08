@@ -1,6 +1,8 @@
-import type { AvatarProps, ButtonProps, InputProps, LinkProps } from '../../components';
+import type { AvatarProps, ButtonProps, InputProps, LinkProps } from 'src/components';
 
-export interface AccountPageProps {
+import type { Props } from 'src/core/block';
+
+export interface AccountPageProps extends Props {
   avatar: AvatarProps;
   user: {
     name: string;

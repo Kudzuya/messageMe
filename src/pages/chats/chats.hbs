@@ -1,18 +1,28 @@
 {{#> ChatsLayout}}
-  <section class="chats__chats">
-    {{> TopPanel top-panel=topPanel }}
+  <section class="chats">
+    {{{ ChatsHeaderComponent topPanel=topPanel newChatButton=newChatButton}}}
     <div class="chats__list">
-      {{#each chatPreviews}}
-        {{> ChatPreview chat=chat}}
+      {{#each chatPreviews as |chat|}}
+        {{{ ChatPreviewComponent id=chat.id user=chat.user lastMessage=chat.lastMessage time=chat.time unread=chat.unread onClick=chat.onClick isSelected=(isCurrent chat ../selectedChat) }}}
       {{/each}}
       <div class="chats__button">
-        {{> Button button=newChatButton }}
+        {{{ ButtonComponent icon=newChatButton.icon size=newChatButton.size type=newChatButton.type width=newChatButton.width label=newChatButton.label}}}
       </div>
     </div>
   </section>
-  <section class="chats__chat">
-    {{#if noChat}}
-      {{> FlashMessage message=noChat }}
+  <section class="chat">
+    {{#if selectedChat}}
+      {{{ ChatHeaderComponent currentChat=(getValueByKey chatPreviews selectedChat) button=chatSettingsButton }}}
+      <div class="chat__content">
+        {{#each (getValueByKey messages selectedChat) as |message|}}
+          {{{ MessageComponent message=message}}}
+        {{/each}}
+      </div>
+      <div class="chat__input">
+        {{{ ChatInputComponent chatInput=chatInput attachButton=attachButton sendButton=sendButton}}}
+      </div>
+    {{else}}
+      {{{ FlashMessageComponent message=noChat }}}
     {{/if}}
   </section>
-{{/ChatsLayout}}
+  {{/ChatsLayout}}

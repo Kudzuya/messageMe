@@ -1,3 +1,3 @@
-export * from './link.type.ts';
+export * from './link.type';
 
-export { default as Link } from './link.hbs?raw';
+export * from './link';

@@ -1,8 +1,11 @@
-import { type PersonaProps } from '../persona';
+import type { PersonaProps } from 'src/components/persona';
+import type { Props } from 'src/core/block';
 
-export interface ChatPreviewProps {
+export interface ChatPreviewProps extends Props {
+  id: number;
   user: PersonaProps;
   lastMessage: string;
   time?: string;
   unread?: number;
+  onClick?: () => void;
 }

@@ -1,12 +1,13 @@
-import { type SplashScreenProps } from './splash-screen.type.ts';
-import splashScreen from '../../assets/images/splash-screen.png';
+import paperclip from 'src/assets/icons/paperclip.svg';
+import splashScreen from 'src/assets/images/splash-screen.png';
+import type { SplashScreenProps } from 'src/pages/splash-screen';
 
 export const SplashScreenContext: SplashScreenProps = {
   content: {
-    title: 'First sprint is done🔥',
-    description: 'These pages are ready for interaction',
+    title: 'The first sprint is done 🚀',
+    description: 'Here is a list of the completed pages for the first iteration',
     image: splashScreen,
-    alt: 'Hoooray',
+    alt: 'You’re done with the first sprint! Congrats!',
   },
   links: [
     {
@@ -30,8 +31,18 @@ export const SplashScreenContext: SplashScreenProps = {
       href: '/not-found',
     },
     {
-      text: '500',
+      text: '5**',
       href: '/server-error',
     },
   ],
+  button: {
+    icon: paperclip,
+    label: 'Attach file',
+    type: 'button',
+    width: 'content',
+    isIconOnly: true,
+    onClick: () => {
+      console.log('Button clicked');
+    },
+  },
 };

@@ -1,6 +1,6 @@
-import type { AccountPageProps } from './account.types.ts';
-import back from '../../assets/icons/back.svg';
-import userAvatar from '../../assets/images/user-avatar.png';
+import back from 'src/assets/icons/back.svg';
+import userAvatar from 'src/assets/images/user-avatar.png';
+import type { AccountPageProps } from 'src/pages/account';
 
 const currentUser = {
   email: 'juj952@mail.ru',
@@ -10,7 +10,6 @@ const currentUser = {
   chatName: 'Kudzuya',
   tel: '+7 926 369 43 79',
 };
-
 export const AccountContext: AccountPageProps = {
   avatar: {
     image: userAvatar,
@@ -99,7 +98,7 @@ export const AccountContext: AccountPageProps = {
     label: 'Back to Chats',
     link: {
       text: 'Go back to chats',
-      href: '/splash-screen',
+      href: 'sign-in',
     },
   },
   

@@ -1,4 +1,4 @@
-export * from './chats.context.ts';
-export * from './chats.types.ts';
+export * from './chats.context';
+export * from './chats.types';
 
-export { default as ChatsPage } from './chats.hbs?raw';
+export { Chats } from './chats';

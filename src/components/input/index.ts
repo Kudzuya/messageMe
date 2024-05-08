@@ -1,3 +1,3 @@
-export * from './input.type.ts';
+export * from './input.type';
 
-export { default as Input } from './input.hbs?raw';
+export * from './input';

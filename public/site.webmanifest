@@ -1,6 +1,6 @@
 {
   "name": "messageMe",
-  "short_name": "MME",
+  "short_name": "messageMe",
   "icons": [
     {
       "src": "/icons/android-chrome-192x192.png",
@@ -11,5 +11,15 @@
       "src": "/icons/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
-    }]
+    },
+    {
+      "src": "/icons/maskable-icon-x192.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#e5e5e5",
+  "background_color": "#e5e5e5",
+  "display": "standalone"
 }

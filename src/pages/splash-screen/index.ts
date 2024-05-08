@@ -1,4 +1,4 @@
-export * from './splash-screen.context.ts';
-export * from './splash-screen.type.ts';
+export * from './splash-screen.context';
+export * from './splash-screen.type';
 
-export { default as SplashScreen } from './splash-screen.hbs?raw';
+export { SplashScreen } from './splash-screen';

@@ -1,4 +1,5 @@
-import type { AuthProps } from '../../layouts';
+import { navigate } from 'src/core/navigate';
+import type { AuthProps } from 'src/layouts/auth';
 
 export const SignUpContext: AuthProps = {
   title: 'GuttenTag, Hola, Greetings! ',
@@ -10,6 +11,7 @@ export const SignUpContext: AuthProps = {
       placeholder: 'Email',
       type: 'email',
       autocomplete: 'email',
+      required: true,
     },
     {
       name: 'login',
@@ -17,6 +19,7 @@ export const SignUpContext: AuthProps = {
       placeholder: 'Login',
       type: 'text',
       autocomplete: 'username',
+      required: true,
     },
     {
       name: 'first_name',
@@ -24,6 +27,7 @@ export const SignUpContext: AuthProps = {
       placeholder: 'First Name',
       type: 'text',
       autocomplete: 'given-name',
+      required: true,
     },
     {
       name: 'second_name',
@@ -31,6 +35,7 @@ export const SignUpContext: AuthProps = {
       placeholder: 'Second Name',
       type: 'text',
       autocomplete: 'family-name',
+      required: false,
     },
     {
       name: 'phone',
@@ -38,6 +43,7 @@ export const SignUpContext: AuthProps = {
       placeholder: 'Phone Number',
       type: 'tel',
       autocomplete: 'tel',
+      required: true,
     },
     {
       name: 'password',
@@ -45,6 +51,7 @@ export const SignUpContext: AuthProps = {
       placeholder: 'Password',
       type: 'password',
       autocomplete: 'new-password',
+      required: true,
     },
     {
       name: 'password',
@@ -52,6 +59,7 @@ export const SignUpContext: AuthProps = {
       placeholder: 'Confirm Password',
       type: 'password',
       autocomplete: 'new-password',
+      required: true,
     },
   ],
   button: {
@@ -64,5 +72,16 @@ export const SignUpContext: AuthProps = {
   link: {
     text: 'Sign in',
     href: '/sign-in',
+  },
+  onSubmit: (event: Event) => {
+    event.preventDefault();
+    const form = event.target as HTMLFormElement;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    console.log(data);
+
+    setTimeout(() => {
+      navigate('chats');
+    }, 300);
   },
 };

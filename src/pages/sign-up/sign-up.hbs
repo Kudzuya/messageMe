@@ -1,7 +1,14 @@
-{{#> AuthLayout title=title description=description logo=logo }}
+{{#> AuthLayout title=title description=description logo=logo onSubmit=onSubmit }}
   {{#each inputs as |input|}}
-    {{> Input input=input}}
+    {{{ InputComponent name=input.name
+                       size=input.size
+                       placeholder=input.placeholder
+                       type=input.type
+                       autocomplete=input.autocomplete
+                       errorMessage=input.errorMessage
+                       onChange=input.onChange
+                       required=input.required }}}
   {{/each}}
-  {{> Button button=button}}
-  <p>Signed up already? {{> Link link=link }}</p>
+  {{{ ButtonComponent size=button.size style=button.style type=button.type label=button.label width=button.width}}}
+  <p>Signed up already? {{{LinkComponent link=link }}}</p>
 {{/AuthLayout}}

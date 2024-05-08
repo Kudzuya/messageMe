@@ -1,3 +1,3 @@
-export * from './flash-message.type.ts';
+export * from './flash-message.type';
 
-export { default as FlashMessage } from './flash-message.hbs?raw';
+export * from './flash-message';

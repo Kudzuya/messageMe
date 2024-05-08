@@ -1,3 +1,2 @@
-export * from './avatar.type.ts';
-
-export { default as Avatar } from './avatar.hbs?raw';
+export * from './avatar.type';
+export * from './avatar';

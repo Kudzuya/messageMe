@@ -1,3 +1,3 @@
-export * from './persona.type.ts';
+export * from './persona.type';
 
-export { default as Persona } from './persona.hbs?raw';
+export * from './persona';

@@ -1,3 +1,3 @@
-export * from './chat-preview.type.ts';
+export * from './chat-preview.type';
 
-export { default as ChatPreview } from './chat-preview.hbs?raw';
+export * from './chat-preview';
